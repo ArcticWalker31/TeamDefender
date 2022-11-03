@@ -101,7 +101,7 @@ public class GameLauncher : MonoBehaviourPunCallbacks
 
         if (joinedRoom == true)
         {
-            MenuManager.Instance.OpenMenu("private room");
+            MenuManager.Instance.OpenMenu("PrivateRoomMenu");
             joinedRoom = false;
         }
 
@@ -115,7 +115,7 @@ public class GameLauncher : MonoBehaviourPunCallbacks
 
         for (int i = 0; i < players.Length; i++)
         {
-            //Instantiate(playerListItemPrefab, playerListContent).GetComponent<PlayerList>().SetUp(players[i]);
+            Instantiate(playerListItemPrefab, playerListContent).GetComponent<PlayerList>().SetUp(players[i]);
         }
 
         startGameButton.SetActive(PhotonNetwork.IsMasterClient);
@@ -184,6 +184,6 @@ public class GameLauncher : MonoBehaviourPunCallbacks
 
     public override void OnPlayerEnteredRoom(Player newplayer)
     {
-        //Instantiate(playerListItemPrefab, playerListContent).GetComponent<PlayerList>().SetUp(newplayer);
+        Instantiate(playerListItemPrefab, playerListContent).GetComponent<PlayerList>().SetUp(newplayer);
     }
 }

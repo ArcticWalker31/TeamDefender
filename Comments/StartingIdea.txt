@@ -1,0 +1,15 @@
+Hello World!
+
+It feels great starting on a new project. Here are some of my ideas for this one.
+These are just ideas and I am open to changes or new ones.
+
+
+Multiplayer
+Game of 3-6
+All the players work together to survive
+Different roles, Pilot, engineer, gunner
+Pilot steers the ship to avoid enemies and collect resources
+engineer builds and upgrades the parts of the ship, unlocking things for the whole team
+gunner fends off the alieans attacking
+
+This is a basic idea. Needs details and improvements.
